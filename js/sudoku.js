@@ -22,6 +22,7 @@ const b = null
   var elx=0;
   var dx=0;
 function easy(){
+  emptyAll();
   for (var i = 1; i <= 81; i++) {
     document.getElementById(String(i)).value = ''
   }
@@ -36,6 +37,7 @@ var a=arrEasy[x];
 }
 
 function medium(){
+  emptyAll();
   for (var i = 1; i <= 81; i++) {
     document.getElementById(String(i)).value = ''
   }
@@ -51,6 +53,7 @@ var a=arrMedium[x];
 
 
 function hard(){
+  emptyAll();
   for (var i = 1; i <= 81; i++) {
     document.getElementById(String(i)).value = ''
   }
@@ -65,6 +68,7 @@ var a=arrHard[x];
 }
 
 function evil(){
+  emptyAll();
   for (var i = 1; i <= 81; i++) {
     document.getElementById(String(i)).value = ''
   }
@@ -78,6 +82,7 @@ var a=arrEvil[x];
   }
 }
 function danger(){
+  emptyAll();
   for (var i = 1; i <= 81; i++) {
     document.getElementById(String(i)).value = ''
   }
@@ -91,6 +96,15 @@ var a=arrDanger[x];
   }
 }
 
+
+function emptyAll(){
+  const placeHolder = " ? "
+  for (var i = 1; i <= 9; i++) {
+    document.getElementById("row " + String(i)).innerHTML = placeHolder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeHolder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeHolder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeHolder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeHolder +
+      "\xa0\xa0\xa0\xa0\xa0\xa0" + placeHolder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeHolder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeHolder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeHolder
+  }
+  document.getElementById("time").innerHTML = ("00.0000 milliseconds")
+}
 //
 function initiate() {
   var startTime = performance.now()
