@@ -27,7 +27,7 @@
       <button onclick="medium()" class="level btn btn-dark">Medium</button>
       <button onclick="hard()" class="level btn btn-dark">Hard</button>
       <button onclick="evil()" class="level btn btn-dark">Evil</button>
-      <button onclick="danger()" class="level btn btn-danger"><b>DANGER</b> | do not touch</button>
+      <button onclick="danger()" id="did"class="level btn btn-outline-danger">⚠️DANGER !!</button>
     </p>
   </div>
   <div id="initialBoard">
@@ -134,7 +134,7 @@
     <p id="row 8"></p>
     <p id="row 9"></p>
   </div>
-  <button onclick="initiate()" class="run btn btn-primary">SOLVE</button>
+  <button  onclick="initiate()" id="solve"class="run btn btn-primary">SOLVE</button>
   <footer class="timediv" id="footer">
     <p>Run Time: <span id="time">00.0000 milliseconds</span></p>
   </footer>
