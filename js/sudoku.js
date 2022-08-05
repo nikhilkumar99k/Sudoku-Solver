@@ -21,6 +21,7 @@ const b = null
   var mx=0;
   var elx=0;
   var dx=0;
+  var element = document.getElementById("solve");
 function easy(){
   emptyAll();
   for (var i = 1; i <= 81; i++) {
@@ -83,6 +84,10 @@ var a=arrEvil[x];
 }
 function danger(){
   emptyAll();
+
+    element.classList.add("bg-danger");
+    element.innerHTML = ('Do Not Run');
+
   for (var i = 1; i <= 81; i++) {
     document.getElementById(String(i)).value = ''
   }
@@ -98,6 +103,9 @@ var a=arrDanger[x];
 
 
 function emptyAll(){
+  element.classList.remove("bg-danger");
+  element.classList.add("bg-primary");
+  element.innerHTML = ('SOLVE');
   const placeHolder = " ? "
   for (var i = 1; i <= 9; i++) {
     document.getElementById("row " + String(i)).innerHTML = placeHolder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeHolder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeHolder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeHolder + "\xa0\xa0\xa0\xa0\xa0\xa0" + placeHolder +
