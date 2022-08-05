@@ -1,15 +1,16 @@
-
+body{
+  overflow-x: hidden;
+}
 #initialBoard {
-    float: left;
-    margin-left: 20%;
-    margin-top: 3%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #answerBoard {
-    margin-right: 20%;
-    float: right;
-    margin-top: 3%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
 p{
     font-size: 17px;
 }
@@ -23,33 +24,30 @@ input{
     width: 40px;
     height: 40px;
 }
-.run{
-    position: relative;
-    left: 30px;
-    top: -5px;
+#boxSection{
+  text-align: center;
+
+}
+#solveSection{
+  text-align: center;
 }
 h2 {
     text-align: center;
-    margin-top: 6%;
 }
-.rules{
-  margin-left: 15px;
-}
-#footer{
-  position: absolute;
-  bottom: 0;
-  left: 42%;
+#rulesSection{
+  margin-left: 35px;
 }
 .timediv{
-  padding-top: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
+  text-align: center;
+  width: 20vw;
   background-color: #d9d9d9;
-  margin-bottom: 5px;
   border: 1px solid black;
   border-radius: 8px;
-  font-weight: 600;
+  font-weight: 400;
+  margin-left: 40vw;
+  padding-top: 8px;
 }
+
 .level{
   size: 10px;
 }
@@ -60,4 +58,17 @@ h2 {
   margin-left: 3px;
   margin-right: 3px;
   margin-top: 7px;
+}
+
+.top{
+  border-top: 3px solid black;
+}
+.left{
+  border-left: 3px solid black;
+}
+.right{
+  border-right: 3px solid black;
+}
+.bottom{
+  border-bottom: 3px solid black;
 }
