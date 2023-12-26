@@ -1,5 +1,5 @@
 # Sudoku-Solver
-###[Try this](https://nikhilkumar99k.github.io/Sudoku-Solver/)
+### [Try this](https://nikhilkumar99k.github.io/Sudoku-Solver/)
 
 Sudoku is a logic-based puzzle. It is a type of constraint satisfaction problem, where the solver is given a finite number of objects (the numerals 1-9) and a set of conditions stating how the objects must be placed in relation to one another. The puzzle consists of a 9×9 grid further divided into nine 3×3 sub-grids (also called boxes, blocks, regions, or sub-squares).
 
